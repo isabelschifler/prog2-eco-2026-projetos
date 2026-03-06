@@ -7,8 +7,8 @@
 
 ## Instrucoes de entrega
 
-1. Dentro da pasta `entregas/`, crie uma pasta com o seu nome (ex.: `entregas/maria-silva/`).
-2. Coloque todos os arquivos da sua solucao nessa pasta.
+1. Dentro da pasta `9-revisao-oo/`, crie uma pasta com o seu nome (ex.: `9-revisao-oo/maria-silva/`).
+2. Coloque todos os arquivos da sua solucao nessa pasta (separe cada exercício).
 3. Inclua um `README.md` usando o template em `/templates/README-exercicio.md`.
 4. Faca commit e abra um Pull Request conforme o `CONTRIBUTING.md`.
 
@@ -57,12 +57,5 @@ Orientações:
 
 Defina na classe base um método processar() que é sobrescrito em cada subclasse com a lógica específica de mensagem ou validação.
 Implemente uma função pagar(pagamento) que recebe qualquer objeto da hierarquia e chama processar(), explorando o polimorfismo.
-
-## Atividade 6 – Refatoração para OO
-Escolha um script simples em JavaScript (pode ser um exercício da Programação I) e reescreva usando classes.
-
-Objetivos da refatoração:
-
-Melhorar nomes de variáveis, funções e estruturas.
 Separar responsabilidades em classes e métodos coerentes.
 Identificar onde POO traz reuso e organização melhores que o código original.
