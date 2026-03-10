@@ -73,6 +73,7 @@ _Escreva aqui uma breve introdução sobre esta categoria e por que ela é impor
 
 **Justificativa:**
 A ferramenta Database Client se destaca porque é uma extensão diretamente integrada ao VS Code. Isso permite que você acesse e gerencie bancos de dados sem precisar alternar entre janelas ou programas externos. Com ela, é possível visualizar tabelas,e manter todo trabalho concentrado em um único ambiente. Enquanto outras ferramentas funcionam como softwares separados ou sistemas avulsos de banco de dados, essa extensão oferece mais praticidade e eficiência para quem desenvolve para web diretamente no VS Code.
+
 ---
 
 ## Seção 3 – Ferramentas de teste de API
