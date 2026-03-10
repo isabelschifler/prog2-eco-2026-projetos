@@ -50,10 +50,10 @@ _Por que esta ferramenta se destacou em relação às demais?_
 > Categoria obrigatória
 
 **Ferramentas comparadas:**
-- Ferramenta 1: `nome`
-- Ferramenta 2: `nome`
-- Ferramenta 3: `nome`
-- Ferramenta 4: `nome`
+- Ferramenta 1: `MySQL`
+- Ferramenta 2: `Database Client`
+- Ferramenta 3: `SQLite`
+- Ferramenta 4: `DBeaver`
 
 **Introdução:**
 _Escreva aqui uma breve introdução sobre esta categoria e por que ela é importante para o projeto._
@@ -62,11 +62,11 @@ _Escreva aqui uma breve introdução sobre esta categoria e por que ela é impor
 
 | Característica | Ferramenta 1 | Ferramenta 2 | Ferramenta 3 | Ferramenta 4 |
 |---|---|---|---|---|
-| Facilidade de instalação | | | | |
-| Visualização de tabelas | | | | |
-| Editor de queries SQL | | | | |
+| Facilidade de instalação |Média |Alta |Alta| Média |
+| Visualização de tabelas |Sim |Sim |Limitado |Sim |
+| Editor de queries SQL |Sim |Sim |Sim |Sim|
 | Integração com a IDE | | | | |
-| Custo / licença | | | | |
+| Custo / licença |Gratuito |Gratuito |Gratuito |Gratuito |
 | **Nota geral (1 a 5)** | | | | |
 
 **Ferramenta escolhida:** `nome`
