@@ -34,8 +34,8 @@ Um ambiente de desenvolvimento integrado (IDE) é uma aplicação de software qu
 | Debugger integrado | |Sim| | |
 | Terminal integrado | |Sim (com plugins)| | |
 | Integração com Git | |Sim | | |
-| Extensões disponíveis | |Diversas | | |
-| Performance | |Média | | |
+| Extensões disponíveis | |Diversas (via Eclipse Marketplace) | | |
+| Performance | |Média (pesados em equipamentos antigos)| | |
 | Custo / licença | |Gratuito | | |
 | **Nota geral (1 a 5)** | |4| | |
 
