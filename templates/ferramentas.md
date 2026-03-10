@@ -143,8 +143,8 @@ _Por que esta ferramenta se destacou em relação às demais?_
 
 | Categoria | Ferramenta escolhida |
 |---|---|
-| IDE / Editor de código | |
-| Cliente de banco de dados | |
+| IDE / Editor de código |VS Code |
+| Cliente de banco de dados | Database Client|
 | Teste de API | |
 | Categoria complementar | |
 
