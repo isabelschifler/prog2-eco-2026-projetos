@@ -28,16 +28,16 @@ Um ambiente de desenvolvimento integrado (IDE) é uma aplicação de software qu
 
 | Característica | Ferramenta 1 | Ferramenta 2 | Ferramenta 3 | Ferramenta 4 |
 |---|---|---|---|---|
-| Facilidade de instalação | | | | |
-| Suporte a JavaScript e Node.js | | | | |
-| Suporte a HTML e CSS | | | | |
-| Debugger integrado | | | | |
-| Terminal integrado | | | | |
-| Integração com Git | | | | |
-| Extensões disponíveis | | | | |
-| Performance | | | | |
-| Custo / licença | | | | |
-| **Nota geral (1 a 5)** | | | | |
+| Facilidade de instalação | |Média | | |
+| Suporte a JavaScript e Node.js | |Sim (com plugins) | | |
+| Suporte a HTML e CSS | |Sim | | |
+| Debugger integrado | |Sim| | |
+| Terminal integrado | |Sim (com plugins)| | |
+| Integração com Git | |Sim | | |
+| Extensões disponíveis | |Diversas | | |
+| Performance | |Média | | |
+| Custo / licença | |Gratuito | | |
+| **Nota geral (1 a 5)** | |4| | |
 
 **Ferramenta escolhida:** `nome`
 
