@@ -7,10 +7,9 @@
 
 | | |
 |---|---|
-| **Integrante 1** | Nome completo  |
-| **Integrante 2** | Nome completo  |
-| **Integrante 3** | Nome completo  |
-| **Integrante 4** | Nome completo  |
+| **Integrante 1** | Isabel Schifler |
+| **Integrante 2** | Suzana Silveira |
+| **Integrante 3** | Yuri Melo  |
 ---
 
 ## Seção 1 – IDEs e editores de código
