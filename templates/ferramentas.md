@@ -65,9 +65,9 @@ _Escreva aqui uma breve introdução sobre esta categoria e por que ela é impor
 | Facilidade de instalação |Média |Alta |Alta| Média |
 | Visualização de tabelas |Sim |Sim |Limitado |Sim |
 | Editor de queries SQL |Sim |Sim |Sim |Sim|
-| Integração com a IDE | | | | |
+| Integração com a IDE |Não |Sim (VS Code) |Não | Parcial (plugins)|
 | Custo / licença |Gratuito |Gratuito |Gratuito |Gratuito |
-| **Nota geral (1 a 5)** | | | | |
+| **Nota geral (1 a 5)** | 4| 5| 3,5| 4|
 
 **Ferramenta escolhida:** `Database Client`
 
