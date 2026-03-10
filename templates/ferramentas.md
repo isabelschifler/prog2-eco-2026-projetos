@@ -16,13 +16,13 @@
 > Categoria obrigatória
 
 **Ferramentas comparadas:**
-- Ferramenta 1: `nome`
-- Ferramenta 2: `nome`
-- Ferramenta 3: `nome`
-- Ferramenta 4: `nome`
+- Ferramenta 1: `VS Code`
+- Ferramenta 2: `Eclipse`
+- Ferramenta 3: `StackBlitz`
+- Ferramenta 4: `CodeSandbox`
 
 **Introdução:**
-_Escreva aqui uma breve introdução sobre esta categoria e por que ela é importante para o desenvolvimento web._
+Um ambiente de desenvolvimento integrado (IDE) é uma aplicação de software que ajuda os programadores a desenvolver código de maneira eficiente. No desenvolvimento web, essas ferramentas são importantes porque oferecem recursos que facilitam a escrita, organização e teste dos programas. Como um IDE conhece as regras das linguagens utilizadas, ele possui diversos recursos inteligentes que auxiliam na escrita e edição automática do código-fonte, tornando o desenvolvimento mais rápido e organizado.
 
 **Tabela comparativa:**
 
