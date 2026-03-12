@@ -155,10 +155,15 @@ A equipe pretende utilizar esse conjunto de ferramentas de forma integrada ao lo
 ---
 
 ## Referências consultadas
+Visual Studio Code - Documentação oficial
 
-- Visual Studio Code - Documentação oficial
-- [Nome da fonte 2](URL)
-- [Nome da fonte 3](URL)
+Database Client - VS Code Marketplace
+
+Thunder Client - VS Code Marketplace
+
+Node.js - Documentação oficial
+
+Vercel - Documentação oficial
 
 ---
 
