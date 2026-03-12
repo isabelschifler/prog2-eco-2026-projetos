@@ -80,60 +80,61 @@ A ferramenta Database Client se destaca porque é uma extensão diretamente inte
 > Categoria obrigatória
 
 **Ferramentas comparadas:**
-- Ferramenta 1: `nome`
-- Ferramenta 2: `nome`
-- Ferramenta 3: `nome`
-- Ferramenta 4: `nome`
+- Ferramenta 1: `Postman`
+- Ferramenta 2: `Insomnia`
+- Ferramenta 3: `Thunder Client`
+- Ferramenta 4: `curl`
 
 **Introdução:**
-_Escreva aqui uma breve introdução sobre esta categoria e por que ela é importante para o projeto._
+Ferramentas de teste de API são indispensáveis para o desenvolvimento de aplicações que seguem a arquitetura REST. Elas permitem enviar requisições HTTP (GET, POST, PUT, DELETE) para os endpoints da aplicação e inspecionar as respostas retornadas pelo servidor. No contexto do projeto, essas ferramentas serão essenciais para testar e depurar a API que será construída, garantindo que ela funcione conforme o esperado antes da integração com o frontend.
 
 **Tabela comparativa:**
 
 | Característica | Ferramenta 1 | Ferramenta 2 | Ferramenta 3 | Ferramenta 4 |
 |---|---|---|---|---|
-| Facilidade de uso | | | | |
-| Suporte a métodos HTTP (GET, POST, PUT, DELETE) | | | | |
-| Visualização da resposta | | | | |
-| Organização de requisições | | | | |
-| Integração com a IDE | | | | |
-| Custo / licença | | | | |
-| **Nota geral (1 a 5)** | | | | |
+| Facilidade de uso |Alta |Alta |Muito Alta |Baixa |
+| Suporte a métodos HTTP (GET, POST, PUT, DELETE) |Sim |Sim |Sim |Sim |
+| Visualização da resposta |Sim |Sim |Sim |Sim |
+| Organização de requisições | Sim|Sim |Sim |Não |
+| Integração com a IDE |Não |Não |Sim (VS Code) |Sim (terminal integrado) |
+| Custo / licença |Freemium | Freemium|Gratuito |Gratuito |
+| **Nota geral (1 a 5)** | 5|4,5 |5 | 3,5|
 
-**Ferramenta escolhida:** `nome`
+**Ferramenta escolhida:** `Thunder Client`
 
 **Justificativa:**
-_Por que esta ferramenta se destacou em relação às demais?_
+O Thunder Client se destacou por ser uma extensão nativa do VS Code, o que permite testar a API diretamente no ambiente de desenvolvimento, sem precisar alternar para outra janela ou aplicativo. Apesar de o Postman ser a ferramenta mais conhecida e completa do mercado, o Thunder Client oferece uma experiência mais integrada e fluida para quem já utiliza o VS Code como editor principal. Além disso, é totalmente gratuito, ao contrário do Postman e Insomnia, que possuem limitações nos planos gratuitos. O curl, embora poderoso para automação, exige maior conhecimento técnico e não oferece uma interface visual amigável.
+
 
 ---
 
 ## Seção 4 – Categoria complementar
 
-**Categoria escolhida:** `ex.: Qualidade de código / Deploy / Gerenciador de pacotes`
+**Categoria escolhida:** ` Deploy e ambiente de execução`
 
 **Ferramentas comparadas:**
-- Ferramenta 1: `nome`
-- Ferramenta 2: `nome`
-- Ferramenta 3: `nome`
-- Ferramenta 4: `nome`
+- Ferramenta 1: `Node.js`
+- Ferramenta 2: `Render`
+- Ferramenta 3: `Vercel`
+- Ferramenta 4: `Docker`
 
 **Introdução:**
-_Escreva aqui uma breve introdução sobre a categoria escolhida e por que consideraram relevante analisá-la._
+As ferramentas de deploy e ambiente de execução são essenciais para colocar uma aplicação no ar e garantir que ela funcione corretamente em diferentes ambientes. O Node.js é a base para executar JavaScript no backend, enquanto as plataformas de hospedagem (Render, Vercel) permitem publicar a aplicação de forma simples e acessível. Já o Docker oferece uma camada adicional de padronização, garantindo que o ambiente de desenvolvimento seja idêntico ao de produção. Essas ferramentas são relevantes para o projeto porque viabilizam a entrega final da aplicação funcional e acessível online.
 
 **Tabela comparativa:**
 
 | Característica | Ferramenta 1 | Ferramenta 2 | Ferramenta 3 | Ferramenta 4 |
 |---|---|---|---|---|
-| Facilidade de uso | | | | |
-| Integração com a IDE | | | | |
-| Documentação e comunidade | | | | |
-| Custo / licença | | | | |
-| **Nota geral (1 a 5)** | | | | |
+| Facilidade de uso | Alta|Alta| Muito Alta| Média|
+| Integração com a IDE | Sim| Parcial| Sim| Sim|
+| Documentação e comunidade |	Excelente | Boa|	Excelente |	Excelente |
+| Custo / licença |Gratuito |Gratuito | Gratuito| Gratuito|
+| **Nota geral (1 a 5)** | 5|4 |5 |4 |
 
-**Ferramenta escolhida:** `nome`
+**Ferramenta escolhida:** `Node.js + Vercel`
 
 **Justificativa:**
-_Por que esta ferramenta se destacou em relação às demais?_
+O Node.js é indispensável por ser o ambiente de execução que permitirá construir o backend do projeto em JavaScript. Já o Vercel se destacou entre as opções de hospedagem por sua integração nativa com GitHub, oferecendo deploy automático a cada push no repositório, além de ser gratuito e muito utilizado para aplicações frontend e APIs serverless. O Render também é uma ótima opção, mas o Vercel oferece uma experiência mais simplificada para quem já utiliza o ecossistema GitHub. O Docker, embora poderoso, adiciona complexidade que pode não ser necessária para o escopo da disciplina.
 
 ---
 
@@ -145,17 +146,17 @@ _Por que esta ferramenta se destacou em relação às demais?_
 |---|---|
 | IDE / Editor de código |VS Code |
 | Cliente de banco de dados | Database Client|
-| Teste de API | |
-| Categoria complementar | |
+| Teste de API | Thunder Client|
+| Categoria complementar |Node.js + Vercel |
 
 **Considerações finais:**
-_Descreva em um parágrafo como a equipe pretende usar essas ferramentas ao longo do semestre e se houve alguma dificuldade durante a atividade de pesquisa e avaliação._
+A equipe pretende utilizar esse conjunto de ferramentas de forma integrada ao longo do semestre, aproveitando ao máximo o ecossistema do VS Code. Com o VS Code como editor principal, as extensões Database Client e Thunder Client permitirão gerenciar o banco de dados e testar a API sem sair do ambiente de desenvolvimento. Por fim, o Node.js será utilizado para o backend e o Vercel para realizar o deploy automático da aplicação. Durante a pesquisa, a principal dificuldade foi selecionar, entre tantas opções disponíveis, aquelas que melhor se integram ao fluxo de trabalho da equipe e atendem às necessidades específicas do projeto.
 
 ---
 
 ## Referências consultadas
 
-- [Nome da fonte 1](URL)
+- Visual Studio Code - Documentação oficial
 - [Nome da fonte 2](URL)
 - [Nome da fonte 3](URL)
 
