@@ -163,7 +163,7 @@ Thunder Client - VS Code Marketplace
 
 Node.js - Documentação oficial
 
-Vercel - Documentação oficial
+Vercel - Documentação oficial https://docs.docker.com/
 
 ---
 
