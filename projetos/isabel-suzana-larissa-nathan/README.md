@@ -1,4 +1,4 @@
-# [Nome do Projeto] – Dupla XX
+# [Amigo Fiel] – Equipe Isabel, Larissa, Suzana e Nathan
 
 ## Integrantes
 
