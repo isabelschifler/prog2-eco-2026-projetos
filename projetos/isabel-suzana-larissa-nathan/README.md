@@ -25,6 +25,8 @@ O sistema é uma plataforma web voltada para a adoção de animais, onde adminis
 - Banco de dados: (ex.: PostgreSQL / MySQL / SQLite)
 - Framework web: (ex.: Express, etc.)
 
+Descrever rapidamente pq escolhemos elas
+
 ---
 
 ## Como executar o projeto
