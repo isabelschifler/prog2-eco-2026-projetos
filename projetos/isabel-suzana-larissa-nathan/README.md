@@ -5,17 +5,17 @@
 | Nome | Matrícula | GitHub |
 |------|-----------|--------|
 | Isabel Schifler | 2024003899 | [@isabelschifler](https://github.com/isabelschifler) |
-| Suzana | 2024002283 | [@SuzanaSilveira](https://github.com/SuzanaSilveira) |
-| Larissa | 2026XXX | [@usuario2](https://github.com/usuario2) |
+| Suzana Silveira | 2024002283 | [@SuzanaSilveira](https://github.com/SuzanaSilveira) |
+| Larissa Damasceno | 2023009987 | [@usuario2](https://github.com/lariiferraz) |
 | Nathan | 2026XXX | [@usuario2](https://github.com/usuario2) |
 
 ---
 
 ## Descrição do projeto
 
-O sistema é uma plataforma web voltada para a adoção de animais, onde administradores podem cadastrar e gerenciar bichinhos disponíveis. Usuários interessados podem criar uma conta, definir suas preferências e buscar animais conforme suas necessidades e localização. A plataforma facilita o contato entre adotantes e responsáveis pelos animais. O principal objetivo é tornar o processo de adoção mais acessível, organizado e eficiente. Assim, o sistema ajuda a reduzir o abandono e aumentar as chances de adoção responsável.
+O sistema é uma plataforma web voltada para a adoção de animais, na qual administradores podem cadastrar, editar e gerenciar os animais disponíveis, mantendo informações como identificação, características e status. Usuários interessados podem criar uma conta, informando dados básicos e localização, além de definir preferências para refinar a busca por animais compatíveis. A plataforma permite a visualização dos animais cadastrados, acesso aos detalhes e a realização de contato com os responsáveis por meio de mensagens, centralizando a comunicação.
 
-falar dos diagramas de classes que fizemos
+Conforme representado no diagrama de casos de uso, são contempladas funcionalidades como cadastro de conta, definição de preferências, navegação e busca de animais, visualização de detalhes e contato com o responsável. Já o diagrama de classes evidencia a estrutura do sistema, com entidades como Administrador, Usuário, Animal e Contato, bem como seus atributos, métodos e relacionamentos. Dessa forma, o sistema organiza e estrutura o processo de adoção, tornando-o mais acessível, eficiente e seguro, contribuindo para a redução do abandono e incentivando a adoção responsável.
 
 ---
 
@@ -24,8 +24,8 @@ falar dos diagramas de classes que fizemos
 - JavaScript (ES6+)
 - HTML5 / CSS3
 - Node.js
-- Banco de dados: (ex.: PostgreSQL / MySQL / SQLite)
-- Framework web: (ex.: Express, etc.)
+- Banco de dados: 
+- Framework web: 
 
 Descrever rapidamente pq escolhemos elas
 
@@ -70,8 +70,8 @@ src/
 | Entrega | Descrição | Data | Status |
 |---------|-----------|------|--------|
 | E1 | Definição do projeto | 06/04/2026 | ✅  |
-| E2 | Modelagem | — | 🔄 |
-| E3 | Backend + BD | — | 🔄 |
+| E2 | Modelagem | 10/04/2026 | ✅ |
+| E3 | Backend + BD | 13/04/2026 | 🔄 |
 | E4 | Interface integrada | — | ⏳ |
 | E5 | Projeto final | — | ⏳ |
 
