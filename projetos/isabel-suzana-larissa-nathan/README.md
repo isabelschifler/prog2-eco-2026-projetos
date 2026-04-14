@@ -27,7 +27,7 @@ Já o diagrama de classes evidencia a estrutura interna do sistema, apresentando
 - HTML5 / CSS3
 - Node.js
 - Banco de dados: PostGre e SQL
-- Framework web: 
+- Framework web: Tailwind
 
 Descrever rapidamente pq escolhemos elas
 
