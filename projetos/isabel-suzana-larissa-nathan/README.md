@@ -15,6 +15,8 @@
 
 O sistema é uma plataforma web voltada para a adoção de animais, onde administradores podem cadastrar e gerenciar bichinhos disponíveis. Usuários interessados podem criar uma conta, definir suas preferências e buscar animais conforme suas necessidades e localização. A plataforma facilita o contato entre adotantes e responsáveis pelos animais. O principal objetivo é tornar o processo de adoção mais acessível, organizado e eficiente. Assim, o sistema ajuda a reduzir o abandono e aumentar as chances de adoção responsável.
 
+falar dos diagramas de classes que fizemos
+
 ---
 
 ## Tecnologias utilizadas
