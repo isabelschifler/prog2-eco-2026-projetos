@@ -15,7 +15,9 @@
 
 O sistema é uma plataforma web voltada para a adoção de animais, na qual administradores podem cadastrar, editar e gerenciar os animais disponíveis, mantendo informações como identificação, características e status. Usuários interessados podem criar uma conta, informando dados básicos e localização, além de definir preferências para refinar a busca por animais compatíveis. A plataforma permite a visualização dos animais cadastrados, acesso aos detalhes e a realização de contato com os responsáveis por meio de mensagens, centralizando a comunicação.
 
-Conforme representado no diagrama de casos de uso, são contempladas funcionalidades como cadastro de conta, definição de preferências, navegação e busca de animais, visualização de detalhes e contato com o responsável. Já o diagrama de classes evidencia a estrutura do sistema, com entidades como Administrador, Usuário, Animal e Contato, bem como seus atributos, métodos e relacionamentos. Dessa forma, o sistema organiza e estrutura o processo de adoção, tornando-o mais acessível, eficiente e seguro, contribuindo para a redução do abandono e incentivando a adoção responsável.
+Conforme representado no diagrama de casos de uso, o sistema contempla as principais interações entre os atores e a plataforma, incluindo funcionalidades como cadastro de conta por administradores e usuários, definição de preferências, navegação e busca de animais disponíveis, além da visualização de detalhes e possibilidade de contato com o responsável pelo animal. Essas ações evidenciam o fluxo de utilização do sistema, destacando como os usuários interagem com as funcionalidades para atingir o objetivo de adoção.
+
+Já o diagrama de classes evidencia a estrutura interna do sistema, apresentando entidades como Administrador, Usuário, Animal e Contato, juntamente com seus respectivos atributos e métodos. Além disso, demonstra os relacionamentos entre essas classes, como a associação entre usuários e animais por meio do contato, e as responsabilidades de cada entidade dentro do sistema. Dessa forma, o modelo estrutural contribui para a organização e implementação da aplicação, tornando o processo de adoção mais acessível, eficiente e seguro, além de auxiliar na redução do abandono e no incentivo à adoção responsável.
 
 ---
 
@@ -24,7 +26,7 @@ Conforme representado no diagrama de casos de uso, são contempladas funcionalid
 - JavaScript (ES6+)
 - HTML5 / CSS3
 - Node.js
-- Banco de dados: 
+- Banco de dados: PostGre e SQL
 - Framework web: 
 
 Descrever rapidamente pq escolhemos elas
