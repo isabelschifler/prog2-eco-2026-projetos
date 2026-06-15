@@ -79,7 +79,7 @@ Além da API interna, o sistema também realiza o consumo de APIs externas para 
 git clone https://github.com/SuzanaSilveira/projeto-progII.git
 
 # Acesse a pasta do projeto
-cd projetos/dupla-XX-nome1-nome2
+cd projeto-progII
 
 # Instale as dependências (se houver)
 npm install
