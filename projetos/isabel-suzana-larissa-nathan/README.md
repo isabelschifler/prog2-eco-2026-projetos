@@ -33,12 +33,6 @@ Para o usuário interessado:
 
 - Realizar contato com os responsáveis por meio de mensagens
 
-Objetivo do sistema:
-
-Promover a adoção responsável, conectando animais que precisam de um lar a pessoas dispostas a oferecer amor e cuidado
-
-Transformar vidas — tanto dos animais quanto dos adotantes — através de um processo simples, seguro e acessível
-
 
 ## Modelagem do Sistema
 
@@ -91,21 +85,21 @@ A API do projeto Amigo Fiel foi desenvolvida em Node.js com Express e organiza a
 
 Para animais, existem as rotas:
 
-GET /api/animais (listar todos)
-POST /api/animais (cadastrar)
-GET /api/animais/disponiveis (listar disponíveis)
-GET /api/animais/buscar/por-especie/{especie} (buscar por espécie)
-GET /api/animais/buscar/por-porte/{porte} (buscar por porte)
-GET /api/animais/{id} (buscar por ID)
-PUT /api/animais/{id} (atualizar)
-DELETE /api/animais/{id} (remover)
+- GET /api/animais (listar todos)
+- POST /api/animais (cadastrar)
+- GET /api/animais/disponiveis (listar disponíveis)
+- GET /api/animais/buscar/por-especie/{especie} (buscar por espécie)
+- GET /api/animais/buscar/por-porte/{porte} (buscar por porte)
+- GET /api/animais/{id} (buscar por ID)
+- PUT /api/animais/{id} (atualizar)
+- DELETE /api/animais/{id} (remover)
 
 Para usuários, as rotas são:
 
-POST /api/usuarios/cadastro (cadastro)
-POST /api/usuarios/login (login)
-POST /api/usuarios/buscar-cep (consulta de CEP)
-GET /api/usuarios/{id} (buscar usuário)
+- POST /api/usuarios/cadastro (cadastro)
+- POST /api/usuarios/login (login)
+- POST /api/usuarios/buscar-cep (consulta de CEP)
+- GET /api/usuarios/{id} (buscar usuário)
 
 A API utiliza JSON para troca de dados e segue o padrão REST para comunicação entre frontend e backend.
 
