@@ -13,24 +13,39 @@
 
 ## Descrição do projeto
 
-O sistema é uma plataforma web voltada para a adoção de animais, na qual administradores podem cadastrar, editar e gerenciar os animais disponíveis, mantendo informações como identificação, características e status. Usuários interessados podem criar uma conta, informando dados básicos e localização, além de definir preferências para refinar a busca por animais compatíveis. A plataforma permite a visualização dos animais cadastrados, acesso aos detalhes e a realização de contato com os responsáveis por meio de mensagens, centralizando a comunicação.
+O Amigo Fiel é uma plataforma web desenvolvida para facilitar e incentivar a adoção responsável de animais. O sistema conecta animais que aguardam por um lar a pessoas interessadas em adotar, promovendo transparência, segurança e eficiência no processo de adoção.
 
 ## Funcionalidades do Sistema
 
-- Cadastro de administradores e usuários adotantes  
-- Cadastro, edição e remoção de animais para adoção  
-- Upload de imagens dos animais  
-- Busca de animais por preferências  
-- Visualização de detalhes dos animais  
-- Contato com responsáveis via WhatsApp  
-- Preenchimento automático de endereço via CEP  
-- Gerenciamento de anúncios ativos
+Para o administrador:
+
+- Cadastrar, editar e gerenciar os animais disponíveis para adoção;
+
+- Manter informações completas como: identificação (nome, espécie, porte, idade) e status de disponibilidade;
+
+- Gerenciar solicitações de adoção e comunicar-se com os usuários   
+
+Para o usuário interessado: 
+
+- Visualizar todos os animais cadastrados com seus respectivos detalhes
+
+- Acessar informações completas de cada animal (nome, idade, porte, etc.)
+
+- Realizar contato com os responsáveis por meio de mensagens
+
+Objetivo do sistema:
+
+Promover a adoção responsável, conectando animais que precisam de um lar a pessoas dispostas a oferecer amor e cuidado
+
+Transformar vidas — tanto dos animais quanto dos adotantes — através de um processo simples, seguro e acessível
+
 
 ## Modelagem do Sistema
 
-Para representar o funcionamento do projeto Amigo Fiel, foram desenvolvidos diagramas UML que auxiliam na compreensão das funcionalidades e da estrutura do sistema. O diagrama de casos de uso apresenta as principais interações entre os atores e a plataforma. Nele, o ator Administrador possui responsabilidades como cadastrar conta, cadastrar animais, visualizar os animais cadastrados e editar ou excluir anúncios. Já o ator Usuário (adotante) pode realizar cadastro na plataforma, definir preferências de busca, navegar entre os animais disponíveis e visualizar detalhes dos animais, além de entrar em contato com o responsável pelo anúncio. Essas funcionalidades representam o fluxo principal do sistema e demonstram como ocorre o processo de adoção dentro da plataforma.
+Para representar o funcionamento do projeto Amigo Fiel, foram desenvolvidos diagramas UML que auxiliam na compreensão das funcionalidades e da estrutura do sistema. O diagrama de casos de uso apresenta as principais interações entre os atores e a plataforma. Nele, o ator Administrador possui responsabilidades como cadastrar conta, cadastrar animais, visualizar os animais cadastrados e editar ou excluir anúncios. Já o ator Usuário (adotante) pode definir preferências de busca, navegar entre os animais disponíveis e visualizar detalhes dos animais, além de entrar em contato com o responsável pelo anúncio. Essas funcionalidades representam o fluxo principal do sistema e demonstram como ocorre o processo de adoção dentro da plataforma.
 
-Já o diagrama de classes representa a estrutura interna do sistema e os relacionamentos entre suas entidades principais: Administrador, Usuário, Animal e Contato. A classe Administrador é responsável pelo gerenciamento dos anúncios de adoção, enquanto a classe Usuário permite definir preferências e buscar animais compatíveis. A classe Animal armazena informações como nome, espécie, idade, porte, descrição, status e também poderá armazenar a URL da imagem enviada por meio da integração com a API do Cloudinary. Por fim, a classe Contato gerencia a comunicação entre usuários interessados e responsáveis pelos animais. Essa modelagem contribui para uma melhor organização da aplicação e facilita futuras expansões e manutenções do sistema.
+Já o diagrama de classes representa a estrutura interna do sistema e os relacionamentos entre suas entidades principais: Administrador, Usuário, Animal e Contato. A classe Administrador é responsável pelo gerenciamento dos anúncios de adoção, enquanto a classe Usuário permite a navegação pelos animais disponíveis e a solicitação de adoção daqueles de seu interesse. A classe Animal armazena informações como nome, espécie, idade, porte, descrição, status e também poderá armazenar a imagem do animal. Por fim, a classe Contato gerencia a comunicação entre usuários interessados e responsáveis pelos animais. Essa modelagem contribui para uma melhor organização da aplicação e facilita futuras expansões e manutenções do sistema.
+
 
 ## Diagrama de Casos de Uso
 
@@ -44,49 +59,82 @@ Já o diagrama de classes representa a estrutura interna do sistema e os relacio
 
 ## Tecnologias utilizadas
 
+- HTML5
+- CSS3
 - JavaScript (ES6+)
-- HTML5 / CSS3
 - Node.js
-- Banco de dados: SQLite
-- Framework web: Tailwind
+- Express.js
+- SQLite
+- Swagger (documentação da API)
 
-As tecnologias escolhidas para o desenvolvimento do Amigo Fiel foram selecionadas por oferecerem praticidade, boa documentação e ampla utilização no desenvolvimento web. O JavaScript (ES6+) foi utilizado para implementar a lógica do sistema tanto no frontend quanto no backend. O HTML5 e CSS3 foram escolhidos para estruturar e estilizar as páginas da aplicação. O Node.js permite executar o backend de forma eficiente e gerenciar as requisições do sistema. O SQLite, juntamente com comandos SQL, foi definido para armazenar e gerenciar os dados de usuários, animais e contatos de forma segura e organizada. Já o Tailwind CSS foi escolhido para agilizar o desenvolvimento da interface, permitindo criar páginas responsivas e modernas com maior produtividade.
+As tecnologias escolhidas para o desenvolvimento do Amigo Fiel foram selecionadas por oferecerem praticidade, boa documentação e ampla utilização no desenvolvimento web. O JavaScript (ES6+) foi utilizado para implementar a lógica do sistema tanto no frontend quanto no backend. O HTML5 e o CSS3 foram escolhidos para estruturar e estilizar as páginas da aplicação, possibilitando a criação de uma interface intuitiva e responsiva. O Node.js foi utilizado como ambiente de execução do backend, permitindo o gerenciamento eficiente das requisições do sistema. Já o Express.js foi empregado para facilitar a criação da API REST e a organização das rotas da aplicação. O SQLite, juntamente com comandos SQL, foi definido para armazenar e gerenciar os dados de usuários, animais e contatos de forma segura e organizada. Além disso, o Swagger foi utilizado para documentar e testar os endpoints da API, contribuindo para a manutenção e validação das funcionalidades desenvolvidas.
 
-## Aplicação do padrão Factory Method
+## Aplicação do padrão MVC 
 
-No desenvolvimento do sistema Amigo Fiel, foi utilizado o padrão de projeto Factory Method, cujo objetivo é centralizar a criação de objetos e permitir que subclasses definam qual tipo específico será instanciado. A escolha desse padrão ocorreu devido à necessidade do sistema trabalhar com diferentes tipos de usuários, como Administrador e Usuário Adotante, cada um possuindo responsabilidades e permissões específicas dentro da plataforma.
-
-Com a utilização do Factory Method, o processo de criação desses usuários torna-se mais organizado e desacoplado das demais classes do sistema, evitando que a lógica de instanciamento fique espalhada pelo código. Dessa forma, a manutenção do sistema é facilitada e futuras expansões tornam-se mais simples, permitindo a adição de novos perfis de usuários sem causar grandes alterações na estrutura existente. Essa abordagem contribui para um código mais reutilizável, escalável e alinhado com boas práticas de desenvolvimento orientado a objetos.
+O sistema Amigo Fiel foi desenvolvido utilizando a arquitetura MVC (Model-View-Controller), que promove a separação das responsabilidades da aplicação. Os controllers são responsáveis pelo processamento das requisições e regras de negócio, os modelos representam as entidades do sistema, como Usuário e Animal, e as views correspondem às páginas HTML exibidas aos usuários. Essa organização torna o código mais modular, facilita a manutenção e permite a evolução do sistema de forma mais organizada.
 
 ## Estrutura de Rotas, Controllers e Views
 
-Seguindo os conceitos estudados na disciplina sobre organização de aplicações web com Node.js e Express, o projeto Amigo Fiel foi estruturado separando as responsabilidades entre as camadas de rotas, controllers e views, tornando o sistema mais organizado e facilitando futuras manutenções. Nessa arquitetura, as rotas são responsáveis por definir os caminhos de navegação e as requisições do sistema, direcionando cada ação para seu respectivo controller. Entre as principais rotas definidas estão /login, /cadastro, /animais, /detalhes-animal, /perfil e /contato, permitindo que os usuários naveguem entre as funcionalidades da plataforma de adoção. Essa organização segue o modelo de roteamento utilizado no Express, no qual cada URL é associada a uma funcionalidade específica da aplicação.
+Seguindo os conceitos estudados na disciplina sobre organização de aplicações web com Node.js e Express, o projeto Amigo Fiel foi estruturado com a separação de responsabilidades entre as camadas de rotas, controllers e views, adotando uma arquitetura inspirada no padrão MVC (Model-View-Controller). Essa abordagem contribui para a organização do sistema, facilitando sua manutenção e futura expansão.
 
-Os controllers são responsáveis por receber as requisições feitas pelas rotas, processar os dados e aplicar as regras de negócio do sistema, como cadastrar usuários, autenticar login, registrar animais para adoção, atualizar informações e realizar contatos entre adotantes e responsáveis pelos animais. Já as views representam a interface visual do sistema, desenvolvida com HTML, CSS, JavaScript e Tailwind, sendo responsáveis por exibir formulários, listas de animais, páginas de detalhes e telas de cadastro. Essa separação de responsabilidades torna o projeto mais escalável e organizado, permitindo que novas funcionalidades sejam adicionadas futuramente com maior facilidade
+As rotas são responsáveis por definir os caminhos de navegação e tratar as requisições HTTP, direcionando cada operação para o controller correspondente. Entre as principais rotas implementadas estão /login, /cadastro, /animais, /detalhes-animal, /perfil e /contato, permitindo a navegação entre as funcionalidades da plataforma de adoção.
+
+Os controllers recebem as requisições encaminhadas pelas rotas, processam os dados e aplicam as regras de negócio da aplicação, como cadastro de usuários, autenticação de login, registro de animais para adoção, atualização de informações e gerenciamento de contatos entre adotantes e responsáveis.
+
+Já as views representam a camada de apresentação do sistema, desenvolvida com HTML, CSS e JavaScript. Essa camada é responsável pela interface visual da aplicação, incluindo formulários, listagens de animais, páginas de detalhes e telas de cadastro.
+
+Essa separação de responsabilidades torna o projeto mais organizado, escalável e de fácil manutenção, permitindo a inclusão de novas funcionalidades com menor impacto nas demais partes do sistema.
 
 ## Integração com APIs Externas
 
-O projeto Amigo Fiel utiliza uma API própria desenvolvida com Node.js e Express.js para realizar a comunicação entre o frontend, backend e banco de dados SQL. Por meio dessa API, são realizadas requisições HTTP utilizando métodos como GET, POST, PUT e DELETE, permitindo funcionalidades como cadastro de usuários, login, gerenciamento de animais disponíveis para adoção, atualização de informações e registro de contatos. Os dados trafegam no formato JSON, seguindo o modelo estudado em sala sobre desenvolvimento e consumo de APIs.
+A API do projeto Amigo Fiel foi desenvolvida em Node.js com Express e organiza as principais funcionalidades do sistema por meio de endpoints REST.
 
-Além da API interna, o sistema também realiza o consumo de APIs externas para ampliar suas funcionalidades. A API do ViaCEP será utilizada para preencher automaticamente os dados de endereço a partir do CEP informado pelo usuário. A API do Cloudinary será responsável pelo armazenamento das imagens dos animais cadastrados na plataforma. Além disso, será utilizada integração com o WhatsApp por meio de links diretos para facilitar a comunicação entre adotantes e responsáveis pelos animais. Dessa forma, o sistema aplica na prática os conceitos de integração, consumo de APIs e troca de dados entre diferentes serviços, tornando a plataforma mais completa e funcional.
+Para animais, existem as rotas:
 
----
+GET /api/animais (listar todos)
+POST /api/animais (cadastrar)
+GET /api/animais/disponiveis (listar disponíveis)
+GET /api/animais/buscar/por-especie/{especie} (buscar por espécie)
+GET /api/animais/buscar/por-porte/{porte} (buscar por porte)
+GET /api/animais/{id} (buscar por ID)
+PUT /api/animais/{id} (atualizar)
+DELETE /api/animais/{id} (remover)
+
+Para usuários, as rotas são:
+
+POST /api/usuarios/cadastro (cadastro)
+POST /api/usuarios/login (login)
+POST /api/usuarios/buscar-cep (consulta de CEP)
+GET /api/usuarios/{id} (buscar usuário)
+
+A API utiliza JSON para troca de dados e segue o padrão REST para comunicação entre frontend e backend.
+
+## Tratamento de Erros
+
+O sistema Amigo Fiel conta com uma camada de tratamento de erros tanto no back-end quanto no front-end, seguindo as boas práticas abordadas na disciplina. No back-end, foi implementado um middleware de erro global que captura todas as exceções geradas durante o processamento das requisições, padronizando as respostas em JSON com mensagens claras e códigos de status HTTP apropriados. As rotas utilizam a função next(erro) para encaminhar os problemas ao middleware, permitindo diferenciar erros esperados, como validações e recursos não encontrados, de erros inesperados, como falhas no banco de dados. No front-end, as requisições à API tratam os status e as mensagens de erro retornadas, exibindo feedbacks visuais adequados para o usuário, como avisos em formulários e alertas sobre ações indevidas. Essa integração entre as camadas garante uma experiência mais confiável e facilita a manutenção do sistema.
+
+## Integração com banco de dados
+
+O sistema Amigo Fiel utiliza o SQLite com o driver better-sqlite3 para armazenar os dados de usuários, animais, preferências, contatos e recuperação de senha. O banco é composto por cinco tabelas: usuarios, com email único e tipo de usuário; animais, com status de disponibilidade; preferencias, para guardar as preferências de busca dos adotantes; contatos, para registrar mensagens dos interessados; e recuperacao_senha, para redefinição de senha. As tabelas são interligadas por chaves estrangeiras, como administrador_id em animais referenciando usuarios(id), garantindo a integridade dos dados. As operações são realizadas com queries parametrizadas usando prepare(), prevenindo injeção de SQL, e os controllers executam as consultas aplicando as regras de negócio da aplicação.
+
+## Autenticação e autorização
+
+O sistema Amigo Fiel implementa autenticação e autorização seguindo o modelo JWT (JSON Web Token), conforme abordado na disciplina. O fluxo de login gera um token codificado em Base64 contendo o ID e o email do usuário, que é armazenado no front-end e enviado no cabeçalho Authorization das requisições. O middleware adminMiddleware é responsável por validar esse token, consultar o banco de dados para confirmar a existência do usuário e verificar se ele possui o tipo "admin", retornando os status HTTP adequados: 401 (não autorizado) para tokens inválidos ou usuários não encontrados, e 403 (proibido) para usuários autenticados sem permissão de administrador. Esse middleware é aplicado nas rotas que exigem privilégios administrativos, garantindo que apenas usuários com perfil de administrador possam acessar funcionalidades restritas do sistema.
 
 ## Como executar o projeto
 
-```bash
 # Clone o repositório
 git clone https://github.com/SuzanaSilveira/projeto-progII.git
 
 # Acesse a pasta do projeto
 cd projeto-progII
 
-# Instale as dependências (se houver)
+# Instale as dependências do back-end
+cd backend
 npm install
 
-# Execute
+# Inicie o servidor
 npm start
-```
 
 ---
 
@@ -106,21 +154,37 @@ projeto-progII/
 │       ├── controladores/      ← lógica das requisições
 │       │   ├── animalController.js
 │       │   └── usuarioController.js
+│       │   └── adminController.js
+│       │   └── authController.js
+│       │   └── solicitacaoController.js
+│       │   └── uploadController.js
 │       │
 │       ├── rotas/              ← definição das rotas da API
 │       │   ├── Animal.js
 │       │   └── Usuario.js
+│       │   └── adminRoutes.js
+│       │   └── authRoutes.js
+│       │   └── solicitacaoRoutes.js
+│       │   └── uploadRoutes.js
 │       │
 │       ├── database/           ← configuração e armazenamento do banco
 │       │   ├── database.js
 │       │   └── amigofiel.db
+│       │   └── solicitacao.js
 │       │
-│       └── models/             ← modelos/entidades do sistema (se forem adicionados futuramente)
-│
+│       ├── middleware/
+│       │   ├── adminMiddleware.js
+│       │   └── uploadConfig.js
+│       │
+│       ├── public/
+│       │   ├── cadastro-animal.html
+│       │   └── cadastro.html
+│       │   └── index.html
+│       │   └── login.html
+│       │   └── style.css
+|
 └── .gitignore                  ← arquivos ignorados pelo Git
 ```
-
-
 
 ---
 
@@ -131,7 +195,7 @@ projeto-progII/
 | E1 | Definição do projeto | 06/04/2026 | ✅  |
 | E2 | Modelagem | 10/04/2026 | ✅ |
 | E3 | Backend + BD | 15/04/2026 |  ✅ |
-| E4 | Interface integrada | 15/05/2026 | 🔄 |
+| E4 | Interface integrada | 15/06/2026 | ✅ |
 | E5 | Projeto final | — | ⏳ |
 
 > ⏳ Pendente | ✅ Concluído | 🔄 Em andamento
