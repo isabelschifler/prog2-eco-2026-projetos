@@ -117,17 +117,17 @@ O sistema Amigo Fiel implementa autenticação e autorização seguindo o modelo
 
 ## Como executar o projeto
 
-# Clone o repositório
+- Clone o repositório
 git clone https://github.com/SuzanaSilveira/projeto-progII.git
 
-# Acesse a pasta do projeto
+- Acesse a pasta do projeto
 cd projeto-progII
 
-# Instale as dependências do back-end
+- Instale as dependências do back-end
 cd backend
 npm install
 
-# Inicie o servidor
+- Inicie o servidor
 npm start
 
 ---
