@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Corridas - RaceHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">🏁 RaceHub</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+
+    </header>
+
+    <div class="hero">
+
+        <h1>Gerenciamento de Corridas</h1>
+
+        <div class="corrida-container">
+
+            <input id="nomeCorrida" placeholder="Nome da Corrida">
+
+            <input id="dataCorrida" type="date">
+
+            <button class="btn-principal" onclick="criarCorridaForm()">
+
+                Criar Corrida
+
+            </button>
+
+        </div>
+
+        <div id="listaCorridas"></div>
+
+    </div>
+
+    <script src="database.js"></script>
+
+    <script>
+
+        async function criarCorridaForm() {
+
+            const nome =
+                document.getElementById("nomeCorrida").value;
+
+            const data =
+                document.getElementById("dataCorrida").value;
+
+            if (nome === "") {
+
+                alert("Preencha o nome da corrida");
+
+                return;
+            }
+
+            try {
+                await criarCorrida({ nome, data });
+
+                await atualizarCorridas();
+
+                document.getElementById("nomeCorrida").value = "";
+                document.getElementById("dataCorrida").value = "";
+
+            } catch (erro) {
+                alert(erro.message);
+            }
+        }
+
+        async function atualizarCorridas() {
+
+            const corridas = await obterCorridas();
+
+            let html = "";
+
+            corridas.forEach(c => {
+
+                html += `
+
+        <div class="corrida-card">
+
+            <h2>${c.nome}</h2>
+
+            <p>📅 ${c.data ? new Date(c.data).toLocaleDateString('pt-BR') : 'Sem data'}</p>
+
+            <span class="status">
+
+                ${c.status}
+
+            </span>
+
+        </div>
+
+        `;
+            });
+
+            document.getElementById("listaCorridas")
+                .innerHTML = html;
+        }
+
+        atualizarCorridas();
+
+    </script>
+
+</body>
+
+</html>

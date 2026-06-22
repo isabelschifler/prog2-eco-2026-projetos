@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda - RaceHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🏁 RaceHub
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="cliente.html">
+                Dashboard
+            </a>
+
+        </nav>
+
+    </header>
+
+    <div class="hero">
+
+        <h1>Agenda da Pista</h1>
+
+        <div class="agenda-box">
+
+            <h2>Selecionar Data</h2>
+
+            <input type="date" id="dataReserva">
+
+            <h2>Selecionar Horário</h2>
+
+            <select id="horario">
+
+                <option>08:00</option>
+                <option>10:00</option>
+                <option>12:00</option>
+                <option>14:00</option>
+                <option>16:00</option>
+                <option>18:00</option>
+
+            </select>
+
+            <button class="btn-principal" onclick="reservarDataForm()">
+
+                Reservar
+
+            </button>
+
+            <h3 id="resultadoAgenda"></h3>
+
+            <div id="listaReservas"></div>
+
+        </div>
+
+    </div>
+
+    <script src="database.js"></script>
+
+    <script>
+
+        async function reservarDataForm() {
+
+            const data =
+                document.getElementById("dataReserva").value;
+
+            const horario =
+                document.getElementById("horario").value;
+
+            if (data === "") {
+
+                alert("Selecione uma data");
+
+                return;
+            }
+
+            const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+            try {
+                await criarReserva({
+                    usuario_id: usuarioLogado ? usuarioLogado.id : null,
+                    data,
+                    horario
+                });
+
+                document.getElementById("resultadoAgenda")
+                    .innerHTML = `✅ Reserva realizada para ${data} às ${horario}`;
+
+                await carregarReservas();
+
+            } catch (erro) {
+                alert(erro.message);
+            }
+        }
+
+        async function carregarReservas() {
+
+            const reservas = await obterReservas();
+
+            let html = "";
+
+            reservas.forEach(r => {
+
+                const dataFormatada = new Date(r.data).toLocaleDateString('pt-BR');
+
+                html += `
+
+        <div class="corrida-card">
+
+            <h3>📅 ${dataFormatada}</h3>
+
+            <p>Horário: ${r.horario}</p>
+
+        </div>
+
+        `;
+            });
+
+            document
+                .getElementById("listaReservas")
+                .innerHTML = html;
+        }
+
+        carregarReservas();
+
+    </script>
+
+</body>
+
+</html>

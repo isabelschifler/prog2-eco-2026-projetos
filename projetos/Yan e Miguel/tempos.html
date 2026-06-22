@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Tempos de Volta - RaceHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🏁 RaceHub
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="admin.html">
+                Dashboard
+            </a>
+
+        </nav>
+
+    </header>
+
+    <div class="hero">
+
+        <h1>Ranking de Tempos</h1>
+
+        <div class="corrida-container">
+
+            <select id="pilotoSelect"></select>
+
+            <input id="tempoVolta" placeholder="Ex: 84.321 (segundos)">
+
+            <button class="btn-principal" onclick="registrarTempoForm()">
+
+                Registrar Tempo
+
+            </button>
+
+        </div>
+
+        <div id="ranking"></div>
+
+    </div>
+
+    <script src="database.js"></script>
+
+    <script>
+
+        async function carregarPilotosSelect() {
+
+            const pilotos = await obterPilotos();
+
+            const select = document.getElementById("pilotoSelect");
+
+            if (pilotos.length === 0) {
+                select.innerHTML = `<option value="">Nenhum piloto cadastrado</option>`;
+                return;
+            }
+
+            select.innerHTML = pilotos
+                .map(p => `<option value="${p.id}">${p.nome}</option>`)
+                .join("");
+        }
+
+        async function registrarTempoForm() {
+
+            const pilotoId =
+                document.getElementById("pilotoSelect").value;
+
+            const tempo =
+                document.getElementById("tempoVolta").value;
+
+            if (pilotoId === "" || tempo === "") {
+
+                alert("Selecione o piloto e informe o tempo");
+
+                return;
+            }
+
+            try {
+                await registrarResultado({
+                    piloto_id: pilotoId,
+                    tempo_volta: tempo
+                });
+
+                document.getElementById("tempoVolta").value = "";
+
+                await carregarRanking();
+
+            } catch (erro) {
+                alert(erro.message);
+            }
+        }
+
+        async function carregarRanking() {
+
+            const resultados = await obterResultados();
+            // já vem ordenado do servidor, do menor tempo pro maior
+
+            let html = `
+
+    <div class="ranking-container">
+
+        <h2>
+            🏆 Ranking Geral
+        </h2>
+
+    `;
+
+            resultados.forEach((r, index) => {
+
+                let medalha = "";
+
+                if (index === 0) {
+                    medalha = "🥇";
+                }
+                else if (index === 1) {
+                    medalha = "🥈";
+                }
+                else if (index === 2) {
+                    medalha = "🥉";
+                }
+
+                html += `
+
+        <table class="ranking">
+
+            <tr>
+
+                <td>
+
+                    ${medalha}
+                    ${r.piloto}
+
+                </td>
+
+                <td>
+
+                    ${r.tempo_volta}s
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        `;
+            });
+
+            html += "</div>";
+
+            document.getElementById("ranking")
+                .innerHTML = html;
+        }
+
+        carregarPilotosSelect();
+        carregarRanking();
+
+    </script>
+
+</body>
+
+</html>

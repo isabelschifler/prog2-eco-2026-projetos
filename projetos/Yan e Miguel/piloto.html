@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Área do Piloto - RaceHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>🏁 RaceHub</h2>
+
+        <a href="piloto.html">Dashboard</a>
+
+        <a href="agenda.html">Agenda</a>
+
+        <a href="tempos.html">Ranking de Tempos</a>
+
+    </div>
+
+    <div class="main">
+
+        <h1>Área do Piloto</h1>
+
+        <p id="boasVindas"></p>
+
+    </div>
+
+    <script src="database.js"></script>
+
+    <script>
+
+        const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+        document.getElementById("boasVindas").innerText =
+            usuarioLogado ? `Bem-vindo, ${usuarioLogado.nome}!` : "";
+
+    </script>
+
+</body>
+
+</html>

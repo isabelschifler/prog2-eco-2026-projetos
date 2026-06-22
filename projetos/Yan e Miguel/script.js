@@ -1,26 +1,25 @@
-const API = 'http://localhost:3000';
-
-async function carregarPilotos(){
-  const res = await fetch(`${API}/pilotos`);
-  const pilotos = await res.json();
-  const lista = document.getElementById('listaPilotos');
-  lista.innerHTML = '';
-  pilotos.forEach(p => {
-    const li = document.createElement('li');
-    li.textContent = p.nome;
-    lista.appendChild(li);
-  });
+function abrirLogin() {
+  document.getElementById("login").scrollIntoView({ behavior: "smooth" });
 }
 
-async function cadastrarPiloto(){
-  const nome = document.getElementById('nomePiloto').value;
-  await fetch(`${API}/pilotos`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ nome })
-  });
-  document.getElementById('nomePiloto').value = '';
-  carregarPilotos();
-}
+async function login() {
+  const email = document.getElementById("email").value;
 
-carregarPilotos();
+  const senha = document.getElementById("senha").value;
+
+  try {
+    const usuario = await autenticarUsuario(email, senha);
+
+    localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
+
+    if (usuario.tipo === "admin") {
+      window.location.href = "admin.html";
+    } else if (usuario.tipo === "piloto") {
+      window.location.href = "piloto.html";
+    } else {
+      window.location.href = "cliente.html";
+    }
+  } catch (erro) {
+    alert(erro.message);
+  }
+}

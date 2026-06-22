@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Pilotos - RaceHub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            🏁 RaceHub
+
+        </div>
+
+        <nav>
+
+            <a href="admin.html">
+
+                Dashboard
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <div class="hero">
+
+        <h1>Gerenciamento de Pilotos</h1>
+
+        <div class="piloto-form">
+
+            <input type="text" id="nomePiloto" placeholder="Nome do Piloto">
+
+            <input type="email" id="emailPiloto" placeholder="Email">
+
+            <input type="password" id="senhaPiloto" placeholder="Senha Inicial">
+
+            <button class="btn-piloto" onclick="cadastrarPilotoForm()">
+
+                ➕ Cadastrar
+
+            </button>
+
+        </div>
+
+        <div id="listaPilotos"></div>
+
+    </div>
+
+    <script src="database.js"></script>
+
+    <script>
+
+        async function cadastrarPilotoForm() {
+
+            const nome =
+                document.getElementById("nomePiloto").value;
+
+            const email =
+                document.getElementById("emailPiloto").value;
+
+            const senha =
+                document.getElementById("senhaPiloto").value;
+
+            if (
+                nome === "" ||
+                email === "" ||
+                senha === ""
+            ) {
+                alert("Preencha todos os campos");
+                return;
+            }
+
+            try {
+                await cadastrarPiloto({ nome, email, senha });
+
+                await atualizarPilotos();
+
+                document.getElementById("nomePiloto").value = "";
+                document.getElementById("emailPiloto").value = "";
+                document.getElementById("senhaPiloto").value = "";
+
+            } catch (erro) {
+                alert(erro.message);
+            }
+        }
+
+        async function excluirPilotoForm(id) {
+            await excluirPiloto(id);
+            await atualizarPilotos();
+        }
+
+        async function atualizarPilotos() {
+
+            const pilotos = await obterPilotos();
+
+            let html = "";
+
+            pilotos.forEach((p) => {
+
+                html += `
+
+        <div class="piloto-card">
+
+            <div>
+
+                <div class="piloto-nome">
+
+                    ${p.nome}
+
+                </div>
+
+                <div class="piloto-id">
+
+                    ${p.email}
+
+                </div>
+
+            </div>
+
+            <button
+                class="btn-piloto"
+                onclick="excluirPilotoForm(${p.id})">
+
+                Excluir
+
+            </button>
+
+        </div>
+
+        `;
+            });
+
+            document
+                .getElementById("listaPilotos")
+                .innerHTML = html;
+        }
+
+        atualizarPilotos();
+
+    </script>
+
+</body>
+
+</html>
