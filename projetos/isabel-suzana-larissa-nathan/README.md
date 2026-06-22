@@ -138,14 +138,14 @@ npm start
 projeto-progII/
 │
 ├── backend/
-│   ├── package.json            ← configura dependências e scripts do Node.js
-│   ├── package-lock.json       ← controle de versões das dependências
-│   ├── .env                    ← variáveis de ambiente
+│   ├── package.json            
+│   ├── package-lock.json      
+│   ├── .env                   
 │   │
 │   └── src/
-│       ├── server.js           ← ponto de entrada da aplicação
+│       ├── server.js           
 │       │
-│       ├── controladores/      ← lógica das requisições
+│       ├── controladores/     
 │       │   ├── animalController.js
 │       │   └── usuarioController.js
 │       │   └── adminController.js
@@ -153,7 +153,7 @@ projeto-progII/
 │       │   └── solicitacaoController.js
 │       │   └── uploadController.js
 │       │
-│       ├── rotas/              ← definição das rotas da API
+│       ├── rotas/              
 │       │   ├── Animal.js
 │       │   └── Usuario.js
 │       │   └── adminRoutes.js
@@ -161,7 +161,7 @@ projeto-progII/
 │       │   └── solicitacaoRoutes.js
 │       │   └── uploadRoutes.js
 │       │
-│       ├── database/           ← configuração e armazenamento do banco
+│       ├── database/           
 │       │   ├── database.js
 │       │   └── amigofiel.db
 │       │   └── solicitacao.js
@@ -169,15 +169,42 @@ projeto-progII/
 │       ├── middleware/
 │       │   ├── adminMiddleware.js
 │       │   └── uploadConfig.js
+│
+├── frontend/
+│       ├── css/           
+│       │   ├── cadastro-animal.css
+│       │   └── cadastro.css
+│       │   └── detalhes-animal.css
+│       │   └── home.css
+│       │   └── index.css
+│       │   └── interesses.css
+│       │   └── login.css
+│       │   └── style.css
+│       │   └── tela-admin.css
 │       │
-│       ├── public/
+│       ├── js/
+│       │   ├── cadastro-animal.js
+│       │   └── cadastro.js
+│       │   └── detalhes-animal.js
+│       │   └── home.css
+│       │   └── index.js
+│       │   └── interesses.js
+│       │   └── login.js
+│       │   └── tela-admin.js
+│       │
+│       ├── pages/
 │       │   ├── cadastro-animal.html
 │       │   └── cadastro.html
+│       │   └── detalhes-animal.html
+│       │   └── home.html 
 │       │   └── index.html
+│       │   └── interesses.html
 │       │   └── login.html
-│       │   └── style.css
+│       │   └── tela-admin.html
+│       │
+├── uploads/
 |
-└── .gitignore                  ← arquivos ignorados pelo Git
+└── .gitignore                  
 ```
 
 ---
