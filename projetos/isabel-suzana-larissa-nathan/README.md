@@ -15,16 +15,16 @@
 
 O Amigo Fiel é uma plataforma web desenvolvida para facilitar e incentivar a adoção responsável de animais. O sistema conecta animais que aguardam por um lar a pessoas interessadas em adotar, promovendo transparência, segurança e eficiência no processo de adoção.
 
-## ✨ Funcionalidades
+## Funcionalidades do Sistema
 
-### 👑 Para o Administrador
+### Para o Administrador
 
 - ✅ Cadastrar, editar e gerenciar animais disponíveis para adoção
 - ✅ Manter informações completas (nome, espécie, porte, idade, status)
 - ✅ Gerenciar solicitações de adoção
 - ✅ Entrar em contato com os usuários interessados
 
-### 🐶 Para o Usuário (Adotante)
+### Para o Usuário (Adotante)
 
 - ✅ Visualizar todos os animais cadastrados com detalhes
 - ✅ Acessar informações completas de cada animal
@@ -63,6 +63,14 @@ As tecnologias escolhidas para o desenvolvimento do Amigo Fiel foram selecionada
 
 ## Como executar o projeto
 
+### Pré-requisitos
+
+- Node.js (versão 18.x ou superior) - https://nodejs.org/
+- Git - https://git-scm.com/
+- NPM (já vem com o Node.js)
+
+### Passo a Passo
+
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/SuzanaSilveira/projeto-progII.git
@@ -79,7 +87,6 @@ npm start
 
 # 5. Acesse no navegador
 # http://localhost:3000
----
 
 ## Estrutura de pastas
 
