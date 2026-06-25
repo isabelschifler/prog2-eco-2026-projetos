@@ -41,11 +41,11 @@ Já o diagrama de classes representa a estrutura interna do sistema e os relacio
 
 ## Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](./Diagrama%20Caso%20de%20Uso.png)
+![Diagrama de Casos de Uso](./casodeuso-casodeuso.drawio.png)
 
 ## Diagrama de Classes
 
-![Diagrama de Classes](./diagramadeclasse.png)
+![Diagrama de Classes](./casodeuso-diagramadeclasse.drawio.png)
 
 ---
 
