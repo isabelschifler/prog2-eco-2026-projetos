@@ -108,7 +108,6 @@ projeto-progII/
 │       │   └── usuarioController.js
 │       │   └── adminController.js
 │       │   └── authController.js
-│       │   └── solicitacaoController.js
 │       │   └── uploadController.js
 │       │
 │       ├── rotas/              
@@ -116,13 +115,11 @@ projeto-progII/
 │       │   └── Usuario.js
 │       │   └── adminRoutes.js
 │       │   └── authRoutes.js
-│       │   └── solicitacaoRoutes.js
 │       │   └── uploadRoutes.js
 │       │
 │       ├── database/           
 │       │   ├── database.js
 │       │   └── amigofiel.db
-│       │   └── solicitacao.js
 │       │
 │       ├── middleware/
 │       │   ├── adminMiddleware.js
@@ -164,17 +161,3 @@ projeto-progII/
 |
 └── .gitignore                  
 ```
-
----
-
-## Histórico de entregas
-
-| Entrega | Descrição | Data | Status |
-|---------|-----------|------|--------|
-| E1 | Definição do projeto | 06/04/2026 | ✅  |
-| E2 | Modelagem | 10/04/2026 | ✅ |
-| E3 | Backend + BD | 15/04/2026 |  ✅ |
-| E4 | Interface integrada | 15/06/2026 | ✅ |
-| E5 | Projeto final | — | ✅ |
-
-> ⏳ Pendente | ✅ Concluído | 🔄 Em andamento
