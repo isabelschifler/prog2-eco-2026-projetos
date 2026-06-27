@@ -115,6 +115,7 @@ projeto-progII/
 │       │   └── Usuario.js
 │       │   └── adminRoutes.js
 │       │   └── authRoutes.js
+│       │   └── publicRoutes.js
 │       │   └── uploadRoutes.js
 │       │
 │       ├── database/           
