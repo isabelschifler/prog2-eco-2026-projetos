@@ -105,14 +105,11 @@ projeto-progII/
 │       │
 │       ├── controladores/     
 │       │   ├── animalController.js
-│       │   └── usuarioController.js
 │       │   └── adminController.js
 │       │   └── authController.js
 │       │   └── uploadController.js
 │       │
 │       ├── rotas/              
-│       │   ├── Animal.js
-│       │   └── Usuario.js
 │       │   └── adminRoutes.js
 │       │   └── authRoutes.js
 │       │   └── publicRoutes.js
@@ -125,6 +122,11 @@ projeto-progII/
 │       ├── middleware/
 │       │   ├── adminMiddleware.js
 │       │   └── uploadConfig.js
+│       │ 
+│       ├── entidades/
+│       │   ├── Animal.js
+│       │   └── Usuario.js
+│       │   └── Contato.js
 │
 ├── frontend/
 │       ├── css/           
