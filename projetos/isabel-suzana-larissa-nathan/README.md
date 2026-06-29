@@ -124,6 +124,10 @@ projeto-progII/
 │       │   ├── Animal.js
 │       │   └── Usuario.js
 │       │   └── Contato.js
+│       │
+│       ├── models/
+│       │   ├── Favorito.js
+│
 │
 ├── frontend/
 │       ├── css/           
@@ -146,6 +150,7 @@ projeto-progII/
 │       │   └── interesses.js
 │       │   └── login.js
 │       │   └── tela-admin.js
+│       │   └── favoritos.js
 │       │
 │       ├── pages/
 │       │   ├── cadastro-animal.html
@@ -156,6 +161,7 @@ projeto-progII/
 │       │   └── interesses.html
 │       │   └── login.html
 │       │   └── tela-admin.html
+│       │   └── favoritos.html
 │       │
 ├── uploads/
 |
