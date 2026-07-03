@@ -28,6 +28,7 @@ O Amigo Fiel é uma plataforma web desenvolvida para facilitar e incentivar a ad
 
 - ✅ Visualizar todos os animais cadastrados com detalhes
 - ✅ Acessar informações completas de cada animal
+- ✅ Adicionar animais a lista de favoritos
 - ✅ Realizar contato com os responsáveis por meio de mensagens internas
 - ✅ Filtrar animais por espécie, porte e disponibilidade
 
@@ -42,7 +43,7 @@ Para representar o funcionamento do projeto Amigo Fiel, foram desenvolvidos diag
 
 ## Diagrama de Classes
 
-![Diagrama de Classes](./casodeuso-diagramadeclasse.drawio.png)
+![Diagrama de Classes](./casodeuso-diagramadeclasse.drawiojpeg)
 
 ---
 
