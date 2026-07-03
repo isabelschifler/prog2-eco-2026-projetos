@@ -43,7 +43,7 @@ Para representar o funcionamento do projeto Amigo Fiel, foram desenvolvidos diag
 
 ## Diagrama de Classes
 
-![Diagrama de Classes](./casodeuso-diagramadeclasse.drawiojpeg)
+![Diagrama de Classes](./casodeuso-diagramadeclasse.drawio.jpeg)
 
 ---
 
@@ -96,7 +96,8 @@ projeto-progII/
 ├── backend/
 │   ├── package.json            
 │   ├── package-lock.json      
-│   ├── .env                   
+│   ├── .env     
+│   ├── uploads/
 │   │
 │   └── src/
 │       ├── server.js           
@@ -105,16 +106,19 @@ projeto-progII/
 │       │   ├── animalController.js
 │       │   └── adminController.js
 │       │   └── authController.js
+│       │   └── favoritoController.js
 │       │   └── uploadController.js
 │       │
 │       ├── rotas/              
 │       │   └── adminRoutes.js
 │       │   └── authRoutes.js
 │       │   └── publicRoutes.js
+│       │   └── favoritoRoutes.js
 │       │   └── uploadRoutes.js
 │       │
 │       ├── database/           
 │       │   ├── database.js
+│       │   ├── apagar-animais.js
 │       │   └── amigofiel.db
 │       │
 │       ├── middleware/
@@ -141,12 +145,13 @@ projeto-progII/
 │       │   └── login.css
 │       │   └── style.css
 │       │   └── tela-admin.css
+│       │   └── favorito.css
 │       │
 │       ├── js/
 │       │   ├── cadastro-animal.js
 │       │   └── cadastro.js
 │       │   └── detalhes-animal.js
-│       │   └── home.css
+│       │   └── home.js
 │       │   └── index.js
 │       │   └── interesses.js
 │       │   └── login.js
@@ -164,7 +169,6 @@ projeto-progII/
 │       │   └── tela-admin.html
 │       │   └── favoritos.html
 │       │
-├── uploads/
 |
 └── .gitignore                  
 ```
